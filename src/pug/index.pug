@@ -1,0 +1,306 @@
+include components/mixin
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Startup
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+        link(rel="stylesheet", href="/css/styles.css")
+    body 
+        header.parallax
+            div.wrapper
+                div.sub-header
+                    div.logo
+                        h1 Startup
+                    ul.flex.nav
+                        +menu(menu)
+                    .burger
+                        span 
+                        span 
+                        span 
+                div#home.welcome-page
+                    h2 Welcome to STARTUP
+                    p.welcome-text Your Favourite Creative Agency Template
+                    div.button#getStarted Get Started
+        main
+            div
+                div.services
+                    h3#services Services
+                    hr
+                    p.text We offer ipsum dolor sheit amet, consetetur sadipscing elitr amet
+                    div.catalog
+                        figure
+                            <img src="/img/services/FA icon.png" alt="">
+                            p.subServicesText Clean Typography
+                            figcaption 
+                                p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit. Lorem ipsum.
+                        figure
+                            <img src="/img/services/solid.png" alt="">
+                            p.subServicesText Rock Solid Code
+                            figcaption
+                                p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit. Lorem ipsum. 
+                        figure
+                            <img src="/img/services/support.png" alt="">
+                            p.subServicesText Expert Support</p>
+                            figcaption
+                                p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit. Lorem ipsum. 
+                div#about.aboutUs
+                    div.wrapper
+                        h3 About Us
+                        hr
+                        p.text Lorem ipsum dolor sit amet, consetetur sadipscing elitr amet
+                        div.textBlockForAboutUs
+                            p.textAboutUs.scale Lorem ipsum dolor sit amet, consetetur sadipscing elitr, 
+                                | sediam nonumy eirmod tempor invidunt ut labore et dolore aliquyam erat, sed diam voluptua. 
+                                | At vero eos et accusam et justo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus
+                                | est Lorem ipsum dolor sit amet. Lorem ipsum dolor et dolore aliquyam erat. Lorem ipsum dolor sit amet. 
+                                | Lorem ipsum eat. 
+                            p.textAboutUs.scale Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sediam nonumy eirtempor invidunt
+                                |ut labore et dolore aliquyam erat, sed diam voluptua. At vero eos eaccusam et justo dolores et ea rebum. 
+                                |Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor et 
+                                |dolore aliquyam erat. Loreipsum dolor sit amet. Lorem ipsum dolor et. 
+                        //- div.slider
+                        div.employes
+                            div.arrowLeft
+                                p.arrow <
+                            div.arrowRight 
+                                p.arrow >
+                            div.photo
+                                <img src="img/employes/Uddin.png" alt="">
+                                p.name Md. Khalil Uddin
+                                p.position Head of Ideas
+                            div.photo
+                                <img src="img/employes/Miah.png" alt="dsdsfs">
+                                p.name Rubel Miah
+                                p.position Lead WordPress Developer
+                            div.photo
+                                <img src="img/employes/Mia.png" alt="">
+                                p.name Shamim Mia
+                                p.position Sr. Web Developer
+                            div.photo
+                                <img src="img/employes/John.png" alt="">
+                                p.name John Doe
+                                p.position Front-end Developer
+                div.wrapper
+                    div#works.lastWorks
+                        h3 Latest Works
+                        hr
+                        ul.menuWorks
+                            li
+                                a(class="filter",href="#") All
+                            li
+                                a(class="filter",href="#") Branding
+                            li
+                                a(class="filter",href="#") Design
+                            li
+                                a(class="filter",href="#") Development
+                            li
+                                a(class="filter",href="#") Strategy
+                        div.blocksWorks
+                            div.row1.opacity
+                                div(class="block1",work="branding")
+                                    <img src="/img/lastWorks/Hair.png" alt="">
+                                    div.blockHover
+                                        div.elements
+                                            p.nameBlock Hair Dresser
+                                            p.filterBlock Branding
+                                            button.view
+                                                a(href="#") View
+                                div(class="block1", work="Design")
+                                    <img src="/img/lastWorks/bird.png" alt="">
+                                    div.blockHover
+                                        div.elements
+                                            p.nameBlock Голуб
+                                            p.filterBlock Design
+                                            button.view
+                                                a(href="#") View
+                                div(class="block1",work="Development")
+                                    <img  src="/img/lastWorks//gadgets.png" alt="">
+                                    div.blockHover
+                                        div.elements
+                                            p.nameBlock Техніка
+                                            p.filterBlock Development
+                                            button.view
+                                                a(href="") View
+                                div.block1(work="Design")
+                                    <img src="/img/lastWorks/camera.png" alt="">
+                                    div.blockHover
+                                        div.elements
+                                            p.nameBlock Camera
+                                            p.filterBlock Design
+                                            button.view
+                                                a(href="#") View
+                                div.block1(work="Branding")
+                                    <img src="/img/lastWorks/bike.png" alt="">
+                                    div.blockHover
+                                        div.elements
+                                            p.nameBlock Bike
+                                            p.filterBlock Branding
+                                            button.view 
+                                                a(href="#") View
+                                div.block1(work="Strategy")
+                                    <img src="/img/lastWorks/notebook.png" alt="">
+                                    div.blockHover
+                                        div.elements
+                                            p.nameBlock Notebook
+                                            p.filterBlock Strategy
+                                            button.view
+                                                a(href="#") View
+                                div.block1(work="Strategy")
+                                    <img src="/img/lastWorks/glases.png">
+                                    div.blockHover
+                                        div.elements
+                                            p.nameBlock Devices
+                                            p.filterBlock Strategy 
+                                            button.view
+                                                a(href="") View
+                                div.block1(work="Design")
+                                    <img src="/img/lastWorks/table.png" alt="">
+                                    div.blockHover
+                                        div.elements
+                                            p.nameBlock Table
+                                            p.filterBlock Design
+                                            button.view
+                                                a(href="#") View
+                                div.block1(work="Development")
+                                        <img src="/img/lastWorks/events.png" alt="">
+                                        div.blockHover
+                                            div.elements
+                                                p.nameBlock Events
+                                                p.filterBlock Development
+                                                button.view
+                                                    a(href="#") View
+                div.getInTouch
+                    div.wrapper
+                        h4 Do you like OUR WORK so far? 
+                            br
+                            | Let's talk about YOUR PROJECT!
+                        a.button(href="#clients") get in touch    
+                div#blog.recentPosts.wrapper
+                    h3 Recent blog posts
+                    hr
+                    p.text  Lorem ipsum dolor sit amet, consetetur sadipscing elitr amet
+                    div.blogPosts
+                        div.blogPostsBlock.flex
+                            .blogPostsImg 
+                                img(src="/img/recentPosts/postOne.png", alt="") 
+                            .blogPostsDesc 
+                                div.topTitle
+                                    div.data
+                                        span 18
+                                        p Oct
+                                    div
+                                        h4.title Startup ideas needs to be funded 
+                                        p.author By Khalil Uddin in Development 
+                                p.addText Lorem ipsum dolor sit amet, consetetur sadipscing 
+                                | elitr, sed diam nonumy eirmod teduntlabore et dolore magna 
+                                | aliquyam erat, sed diam voluptua. At vero eos et accusam et 
+                                | justo duo dolores et erebum. Stet clita kasd gubergren, no sea 
+                                | takimata sanctus est Lorem ipsum dolor sit am Lorem ipsum dolor 
+                                | sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod 
+                                | tempor invidulabore et dolore aliquyam erat, sed diam 
+                                div.readmore
+                                    a(href="") Read more 
+                    hr.allWidth
+                    div.blogPosts
+                        div.blogPostsBlock.flex
+                            .blogPostsImg 
+                                img(src="/img/recentPosts/postTwo.png", alt="") 
+                            .blogPostsDesc 
+                                div.topTitle
+                                    div.data
+                                        span 18
+                                        p Oct
+                                    div
+                                        h4.title User Interface Designing Elements 
+                                        p.author By Khalil Uddin in Development 
+                                p.addText Lorem ipsum dolor sit amet, consetetur sadipscing 
+                                | elitr, sed diam nonumy eirmod teduntlabore et dolore magna 
+                                | aliquyam erat, sed diam voluptua. At vero eos et accusam et 
+                                | justo duo dolores et erebum. Stet clita kasd gubergren, no sea 
+                                | takimata sanctus est Lorem ipsum dolor sit am Lorem ipsum dolor 
+                                | sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod 
+                                | tempor invidulabore et dolore aliquyam erat, sed diam 
+                                div.readmore
+                                    a(href="") Read more 
+                div.wrapper
+                    div.brands
+                        div.block
+                            <img src="img/brand/brandOne.png" alt="">
+                            p.Author John Doe, Google Inc
+                            p.quote Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, sequi.
+                        div.block
+                            <img src="img/brand/brandTwo.png" alt="">
+                            p.Author Steave Jobs
+                            p.quote 2Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, sequi.
+                        div.block
+                            <img src="img/brand/BrandThree.png" alt="">
+                            p.Author Elon Mask
+                            p.quote 3Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, sequi.
+                        div.block
+                            <img src="img/brand/brandFour.png" alt="">
+                            p.Author Joe Baiden
+                            p.quote 4Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, sequi.
+                        div.block
+                            <img src="img/brand/BrandFive.png" alt="">
+                            p.Author Donald Trump
+                            p.quote 5Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, sequi.
+                    div.quoteContainer
+                        p.quoteText
+                        p.quoteAuthor
+                    div.switcher
+                        span 
+                        span 
+                        span 
+                div.blockHover
+                div#clients.wrapper.contacts
+                    h3(id="form") Get in touch
+                    hr
+                    p.text Lorem ipsum dolor sit amet, consetetur sadipscing elitr amet
+                    .formAdapt.flex
+                        .ourContacts
+                            .address 
+                                h4 Address
+                                p 312, 7th Ave, New York NY 101200, <br> United States of America
+                            .hotLines 
+                                h4 Hotline (24x7)
+                                p +65 0052 300, +65 88251 210 <br> +88 01723 511 340
+                            .email 
+                                h4 E-mail
+                                p.text shapedtheme@gmail.com <br> khalilkode@gmail.com
+                        form.twoBlocks
+                            div.flex.subTwoBlocks
+                                input(type="text" class="userName" placeholder="Your Name")
+                                input(type="email" class="email" placeholder="Your Email")
+                            div.flex.subTwoBlocks
+                                <input type="text" class="subject" placeholder="Your subject">
+                                <input type="text" class="company" placeholder="Company Name margin">
+                            textarea(name="message" class="message" cols="30" rows="10" placeholder="Write your message")
+                            br
+                            div.flex
+                                button.btn Send message
+                                p.text * We’ll contact you as as possible. We don’t reply on Monday.
+        footer#contact
+            .wrapper
+                ul.socials
+                    li
+                        a(href="#")
+                            img(src="img/contacts/socials.png", alt="") 
+                    
+                    li
+                        a(href="#") 
+                            img(src="img/icons/inst.png", alt="")
+                    li
+                        a(href="#") 
+                            img(src="img/icons/fb.png", alt="")
+                    li
+                        a(href="#")
+                            img(src="img/icons/linkedin.png", alt="")
+                hr
+                h3 © 2015 Startup, Designed by ShapedTheme
+
+        script(src="js/script.js") 

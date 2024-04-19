@@ -1,0 +1,36 @@
+- 
+    let menu = [
+        {
+            name: "Home",
+            url: "#home"
+        },
+        {
+            name: "Services",
+            url: "#services"
+        },
+        {
+            name: "About",
+            url: "#about"
+        },
+        {
+            name: "Works",
+            url: "#works"
+        },
+        {
+            name: "Blog",
+            url: "#blog"
+        },
+        {
+            name: "Clients",
+            url: "#clients"
+        },
+        {
+            name: "Contact",
+            url: "#contact"
+        }
+    ]
+
+mixin menu(items)
+    for item in items 
+        li 
+            a(href=item.url) #{item.name} 
